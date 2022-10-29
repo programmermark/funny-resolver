@@ -1,0 +1,35 @@
+{
+  "name": "@funny-ui/resolver",
+  "version": "0.0.1",
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "description": "funny-ui实现按需引入的resolver",
+  "keywords": [
+    "funny-ui",
+    "resolver"
+  ],
+  "author": "zhonghui <1126765590hui@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "es",
+    "tsconfig.json",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/programmermark/funny-resolver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/programmermark/funny-resolver/issues"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "dev:cjs": "tsc -p tsconfig.cjs.json --watch",
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
